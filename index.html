@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Deroy | Game Developer</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="glass-nav">
+        <div class="logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">Profile</a></li>
+            <li><a href="#games">Projects</a></li>
+            <li><a href="#addons">Mods & Tools</a></li>
+            <li><a href="#art">Art & Animation</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">Let's Talk</a>
+    </nav>
+
+    <section id="about" class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content fade-up">
+                    <div class="badge-container">
+                        <span class="status-badge"><span class="pulse"></span> Looking for Internship</span>
+                    </div>
+                    <h1 class="mega-title">
+                        <span class="gradient-text">Thomas Deroy</span>
+                    </h1>
+
+                    <h2 class="sub-title">Gameplay Programmer</h2>
+
+                    <p class="hero-bio">
+                        Hello, I am <strong>Thomas Deroy</strong>. Based in Belgium (Currently a DAE student). 
+                        I love making games, so be sure to check out my <strong>Game Library</strong>. 
+                        While you're there, you’ll also find mods, tools, and even an art corner.
+                    </p>
+                    
+                    <div class="hero-features fade-up delay-200">
+                        <div class="hero-features-title">Featured Mechanics</div>
+                        <div class="feature-pills">
+                            
+                            <div class="feature-pill modal-trigger"
+                                 data-tooltip="Built an in-game editor where players create and share levels via unique codes"
+                                 data-title="SL1M3 Editor"
+                                 data-desc-id="sl1m3_editor"
+                                 data-tags="GDScript,Godot"
+                                 data-img="assets/template.png"
+                                 data-logo="assets/SL1M3_Editor.png">
+                                <span class="pill-main"><i class="fas fa-cubes"></i> In-Game Level Editor</span>
+                                <span class="pill-divider">|</span>
+                                <span class="pill-engines">
+                                    <img src="assets/godot.png" alt="Godot" class="micro-icon">
+                                </span>
+                            </div>
+
+                            <div class="feature-pill modal-trigger"
+                                 data-tooltip="Creating and understanding ragdoll physics"
+                                 data-title="AnimalsOnSet"
+                                 data-desc-id="animals_on_set"
+                                 data-tags="C#,Unity"
+                                 data-img="assets/AnimalsOnSet.gif"
+                                 data-logo="assets/AnimalsOnSet.png"
+                                 data-youtube="https://youtube.com">
+                                <span class="pill-main"><i class="fas fa-person-falling"></i> Ragdolls</span>
+                                <span class="pill-divider">|</span>
+                                <span class="pill-engines">
+                                    <img src="assets/unity.png" alt="Unity" class="micro-icon">
+                                </span>
+                            </div>
+
+                            <div class="feature-pill has-dropdown"
+                                 data-tooltip="Implemented Finite State Machines (FSM) to handle complex AI decision-making and behaviors.">
+                                
+                                <span class="pill-main"><i class="fas fa-sitemap"></i> Finite State Machines</span>
+                                <span class="pill-divider">|</span>
+                                <span class="pill-engines">
+                                    <img src="assets/unity.png" alt="Unity" class="micro-icon">
+                                    <img src="assets/unreal.png" alt="Unreal" class="micro-icon" style="filter: invert(1) opacity(0.6);">
+                                </span>
+
+                                <div class="pill-dropdown">
+                                    <div class="dropdown-item modal-trigger"
+                                         data-title="Ecosystem Simulator" 
+                                         data-desc-id="ecosystem_sim" 
+                                         data-img="assets/ecosystem.gif" 
+                                         data-logo="assets/unity.png"
+                                         data-tags="C#, Unity"
+                                         data-github="https://github.com/Thomas-Deroy/EcosystemSim">
+                                         <img src="assets/unity.png" alt="Unity" class="micro-icon"> Ecosystem Simulator
+                                    </div>
+
+                                    <div class="dropdown-item modal-trigger"
+                                         data-title="Zombie Survivor AI" 
+                                         data-desc-id="zombie_ai" 
+                                         data-img="assets/ZombieSurviverAI.gif" 
+                                         data-logo="assets/unreal.png"
+                                         data-tags="C++,Unreal Engine"
+                                         data-github="https://github.com/Thomas-Deroy/ZombieAI">
+                                        <img src="assets/unreal.png" style="width: 14px; filter: invert(1);"> Zombie Survivor AI
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--<div class="feature-pill modal-trigger"
+                                 data-tooltip="Implementing multiplayer functionality for collaborative gameplay"
+                                 data-title="AnimalsOnSet"
+                                 data-desc-id="animals_on_set"
+                                 data-tags="C#,Unity"
+                                 data-img="assets/template.png"
+                                 data-logo="assets/AnimalsOnSet.png"
+                                 data-youtube="https://youtube.com">
+                                <span class="pill-main"><i class="fas fa-network-wired"></i> Multiplayer</span>
+                                <span class="pill-divider">|</span>
+                                <span class="pill-engines">
+                                    <img src="assets/unity.png" alt="Unity" class="micro-icon">
+                                </span>
+                            </div> -->
+                        </div>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <a href="#games" class="btn btn-primary">
+                            <span>View Games</span>
+                            <i class="fas fa-gamepad"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/thomas-deroy-96877838a" target="_blank" class="btn btn-outline">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual fade-up delay-200">
+                    <a href="#sl1m3-card" class="holo-link">
+                        <div class="holo-card">
+                            <div class="holo-header">
+                                <i class="fas fa-star"></i>
+                                <span>FAVOURITE_PROJECT.cpp</span>
+                            </div>
+                            <div class="holo-content">
+                                <div class="code-block">
+                                    <span class="c-purple">void</span> <span class="c-blue">Render</span>() {<br>
+                                    &nbsp;&nbsp;<span class="c-green">// Rendering Portfolio</span><br>
+                                    &nbsp;&nbsp;<span class="c-yellow">RenderPortfolio</span>();<br>
+                                    &nbsp;&nbsp;<span class="c-purple">return</span> 0;<br>
+                                    }
+                                </div>
+                                <img src="assets/SL1M3_lua.png" alt="Project Preview" class="holo-img">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="games" class="container section-pad fade-in-section">
+        <div class="section-header">
+            <h2 class="section-title">Game Library</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="bento-grid">
+            <div class="modal-trigger project-card tilt-card"
+                 data-title="CoinHeist"
+                 data-desc-id="coinheist"
+                 data-tags="NES Assembly,Mesen"
+                 data-img="assets/CoinHeist.gif"
+                 data-logo="assets/CoinHeist.png"
+                 data-github="https://github.com/Thomas-Deroy/CoinHeist"
+                 data-youtube="https://www.youtube.com/watch?v=276q-lvgbi0">
+
+                 <div class="card-top"><span class="tag lang-tag">Assembly</span></div>
+                 <div class="card-badge-container">
+                     <div class="card-badge original"><i class="fas fa-certificate"></i> Original</div>
+                     <div class="card-badge group"><i class="fas fa-users"></i> Group</div>
+                 </div>
+
+                <div class="card-bg"><img src="assets/CoinHeist.png" alt="Game BG"></div>
+                <div class="card-content">
+                    <div class="card-bottom">
+                        <h3>CoinHeist</h3>
+                        <p>NES 2 Player Game</p>
+                    </div>
+                </div>
+                <div class="hover-overlay"></div>
+            </div>
+
+            <div class="modal-trigger project-card tilt-card" 
+                 data-title="Ms. Pacman Remake"
+                 data-desc-id="ms_pacman"
+                 data-tags="Custom C++ Engine,C++"
+                 data-img="assets/mspacman.gif"
+                 data-logo="assets/mspacman.png"
+                 data-github="https://github.com/Thomas-Deroy/MsPacMan-Remake-Minigin"
+                 data-youtube="https://youtube.com">
+                
+                 <div class="card-top"><span class="tag lang-tag">C++</span></div>
+                 <div class="card-badge-container">
+                     <div class="card-badge remake"><i class="fas fa-clone"></i> Remake</div>
+                 </div>
+                
+                <div class="card-bg"><img src="assets/mspacman.png" alt="Game BG"></div>
+                <div class="card-content">
+                    <div class="card-bottom">
+                        <h3>Ms. Pacman Remake</h3>
+                        <p>Classic Ms. Pacman</p>
+                    </div>
+                </div>
+                <div class="hover-overlay"></div>
+            </div>
+
+            <div id="sl1m3-card" class="modal-trigger project-card tilt-card"
+                 data-title="SL1M3"
+                 data-desc-id="sl1m3"
+                 data-tags="Custom C++ Engine,Lua"
+                 data-img="assets/SL1M3.gif"
+                 data-logo="assets/SL1M3.png"
+                 data-github="https://github.com/Thomas-Deroy/SL1M3-LuaVersion"
+                 data-youtube="https://www.youtube.com/watch?v=5dh4dfLtrbc">
+
+                 <div class="card-top"><span class="tag lang-tag">C++ / Lua</span></div>
+                 <div class="card-badge-container">
+                     <div class="card-badge original"><i class="fas fa-certificate"></i> Original</div>
+                 </div>
+
+                <div class="card-bg"><img src="assets/SL1M3.png" alt="Game BG"></div>
+                <div class="card-content">
+                    <div class="card-bottom">
+                        <h3>SL1M3</h3>
+                        <p>Platformer Game</p>
+                    </div>
+                </div>
+                <div class="hover-overlay"></div>
+            </div>
+
+            <div class="modal-trigger project-card tilt-card"
+                 data-title="Tribe Explorer"
+                 data-desc-id="tribe_explorer"
+                 data-tags="Custom C++ Engine,C++"
+                 data-img="assets/tribe_explorer.gif"
+                 data-logo="assets/tribe_explorer.png"
+                 data-github="https://github.com/Thomas-Deroy/TribeExplorer-Remake"
+                 data-youtube="https://youtube.com">
+                 
+                 <div class="card-top"><span class="tag lang-tag">C++</span></div>
+                 <div class="card-badge-container">
+                     <div class="card-badge remake"><i class="fas fa-clone"></i> Remake</div>
+                 </div>
+
+                <div class="card-bg"><img src="assets/tribe_explorer.png" alt="Game BG"></div>
+                <div class="card-content">
+                    <div class="card-bottom">
+                        <h3>Tribe Explorer</h3>
+                        <p>Platformer Game</p>
+                    </div>
+                </div>
+                <div class="hover-overlay"></div>
+            </div>
+
+            <div class="modal-trigger project-card tilt-card"
+                 data-title="AnimalsOnSet"
+                 data-desc-id="animals_on_set"
+                 data-tags="C#,Unity"
+                 data-img="assets/AnimalsOnSet.gif"
+                 data-logo="assets/AnimalsOnSet.png"
+                 data-youtube="https://youtube.com">
+
+                 <div class="card-top"><span class="tag lang-tag"><img src="assets/unity.png" alt="Unity" style="width: 20px; height: 20px;"></span></div>
+                 <div class="card-badge-container">
+                     <div class="card-badge original"><i class="fas fa-certificate"></i> Original</div>
+                     <div class="card-badge group"><i class="fas fa-users"></i> Group</div>
+                 </div>
+                 
+                <div class="card-bg"><img src="assets/AnimalsOnSet.png" alt="Game BG"></div>
+                <div class="card-content">
+                    <div class="card-bottom">
+                        <h3>Animals On Set</h3>
+                        <p>Party Game</p>
+                    </div>
+
+                    <div class="card-feature-tags">
+                        <span class="feature-tag"><i class="fas fa-person-falling"></i> Ragdolls</span>
+                        <!--<span class="feature-tag"><i class="fas fa-network-wired"></i> Multiplayer</span>-->
+                    </div>
+                </div>
+                <div class="hover-overlay"></div>
+            </div>
+
+            <div class="modal-trigger project-card tilt-card"
+                 data-title="Crazy Pong"
+                 data-desc-id="crazy_pong"
+                 data-tags="Custom C++ Engine,Lua"
+                 data-img="assets/CrazyPong.gif"
+                 data-logo="assets/CrazyPong.png"
+                 data-github="https://github.com/Thomas-Deroy/CrazyPong"
+                 data-youtube="https://www.youtube.com/watch?v=b2tWmPOlxnU">
+                 
+                 <div class="card-top"><span class="tag lang-tag">C++ / Lua</span></div>
+                 <div class="card-badge-container">
+                     <div class="card-badge original"><i class="fas fa-certificate"></i> Original</div>
+                 </div>
+
+                <div class="card-bg"><img src="assets/CrazyPong.png" alt="Game BG"></div>
+                <div class="card-content">
+                    <div class="card-bottom">
+                        <h3>Crazy Pong</h3>
+                        <p>Pong Variant</p>
+                    </div>
+                </div>
+                <div class="hover-overlay"></div>
+            </div>
+
+            <div class="modal-trigger project-card tilt-card"
+                 data-title="SL1M3 Editor"
+                 data-desc-id="sl1m3_editor"
+                 data-tags="GDScript,Godot"
+                 data-img="assets/template.png"
+                 data-logo="assets/SL1M3_Editor.png"
+                 data-youtube="https://youtube.com">
+
+                 <div class="card-top"><span class="tag lang-tag"><img src="assets/godot.png" alt="Godot" style="width: 20px; height: 20px;"></span></div>
+                 <div class="card-badge-container">
+                     <div class="card-badge original"><i class="fas fa-certificate"></i> Original</div>
+                 </div>
+
+                <div class="card-bg"><img src="assets/SL1M3_Editor.png" alt="Game BG"></div>
+                <div class="card-content">
+                    <div class="card-bottom">
+                        <h3>SL1M3 Editor</h3>
+                        <p>Level Editor Game</p>
+                    </div>
+
+                    <div class="card-feature-tags">
+                        <span class="feature-tag"><i class="fas fa-cubes"></i> In-Game Level Editor</span>
+                    </div>
+                </div>
+                <div class="hover-overlay"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="addons" class="container section-pad fade-in-section">
+        <div class="section-header">
+            <h2 class="section-title">Mods & Tools</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="tools-grid">
+            
+            <div class="modal-trigger tool-item" 
+                 data-title="Werewolves Plugin" 
+                 data-desc-id="werewolves"
+                 data-img="assets/werewolves.gif" 
+                 data-logo="assets/werewolves.png"
+                 data-tags="Java,Minecraft"
+                 data-github="https://github.com/Thomas-Deroy/WerewolfGame">
+                <div class="tool-icon"><i class="fas fa-cube"></i></div>
+                <div class="tool-info">
+                    <h4>Werewolves Plugin</h4>
+                    <span>Minecraft Plugin</span>
+                </div>
+                <div class="tool-arrow"><i class="fas fa-chevron-right"></i></div>
+            </div>
+
+            <div class="modal-trigger tool-item" 
+                 data-title="Dragon Awakens" 
+                 data-desc-id="dragon_awakens"
+                 data-img="assets/hoi4_dragonawakens.gif" 
+                 data-logo="assets/hoi4_dragonawakens.png"
+                 data-tags="Paradox Script,HOI4"
+                 data-steam="https://steamcommunity.com/sharedfiles/filedetails/?id=3329352840">
+                <div class="tool-icon"><i class="fas fa-map"></i></div>
+                <div class="tool-info">
+                    <h4>Dragon Awakens</h4>
+                    <span>Hearts of Iron IV Mod</span>
+                </div>
+                <div class="tool-arrow"><i class="fas fa-chevron-right"></i></div>
+            </div>
+
+            <div class="modal-trigger tool-item" 
+                 data-title="Dual Rasterizer" 
+                 data-desc-id="dual_rasterizer"
+                 data-img="assets/dual_rasterizer.gif" 
+                 data-tags="C++,Graphics"
+                 data-github="https://github.com/Thomas-Deroy/DualRasterizer">
+                <div class="tool-icon"><i class="fa-solid fa-layer-group"></i></div>
+                <div class="tool-info">
+                    <h4>Dual Rasterizer</h4>
+                    <span>Graphics Programming</span>
+                </div>
+                <div class="tool-arrow"><i class="fas fa-chevron-right"></i></div>
+            </div>
+
+            <div class="modal-trigger tool-item" 
+                 data-title="Ecosystem Simulator" 
+                 data-desc-id="ecosystem_sim"
+                 data-img="assets/EcoSystem.gif" 
+                 data-tags="C#, Unity"
+                 data-github="https://github.com/DAE-GD-2025-2026/gameai-research-project-Thomas-Deroy">
+                <div class="tool-icon"><i class="fas fa-network-wired"></i></div>
+                <div class="tool-info">
+                    <h4>Ecosystem Simulator</h4>
+                    <span>Research Project</span>
+                </div>
+
+                <div class="tool-engine-border">
+                    <img src="assets/unity.png" alt="Unity" style="width: 18px; height: 18px;">
+                </div>
+
+                <div class="tool-arrow"><i class="fas fa-chevron-right"></i></div>
+            </div>
+
+            <div class="modal-trigger tool-item" 
+                 data-title="Zombie Surviver AI" 
+                 data-desc-id="zombie_ai"
+                 data-img="assets/ZombieSurviverAI.gif" 
+                 data-tags="C++"
+                 data-github="https://github.com/DAE-GD-2025-2026/gameai-zombie-Thomas-Deroy">
+                <div class="tool-icon"><i class="fas fa-brain"></i></div>
+                <div class="tool-info">
+                    <h4>Zombie Surviver AI</h4>
+                    <span>C++ Systems</span>
+                </div>
+
+                <div class="tool-engine-border">
+                    <img src="assets/unreal.png" alt="Unreal" style="width: 18px; height: 18px; filter: invert(1);">
+                </div>
+
+                <div class="tool-arrow"><i class="fas fa-chevron-right"></i></div>
+            </div>
+
+        </div>
+    </section>
+
+<section id="art" class="container section-pad fade-in-section">
+    <div class="section-header art-header-flex">
+        <h2 class="section-title">Art & Animation Corner</h2>
+        
+        <div class="art-controls">
+            <div id="artFilters" class="art-filters hidden-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="art">Art</button>
+                <button class="filter-btn" data-filter="animation">Animation</button>
+            </div>
+            
+            <button id="toggleArt" class="btn btn-sm btn-outline">Expand Gallery</button>
+        </div>
+    </div>
+    
+    <div id="artGallery" class="art-masonry hidden-gallery">
+        <div class="art-brick zoom-trigger" data-type="art">
+            <span class="gallery-tag tag-art"><i class="fas fa-paint-brush"></i> Art</span>
+            <img src="assets/CoinHeist_Art.png" alt="CoinHeist Art">
+            <div class="art-caption">CoinHeist - Assets</div>
+        </div>
+
+        <div class="art-brick zoom-trigger" data-type="art">
+            <span class="gallery-tag tag-art"><i class="fas fa-paint-brush"></i> Art</span>
+            <img src="assets/SL1M3_Art.png" alt="SL1M3 Art">
+            <div class="art-caption">SL1M3 - Main Screen</div>
+        </div>
+
+        <div class="art-brick zoom-trigger" data-type="animation">
+            <span class="gallery-tag tag-animation"><i class="fas fa-film"></i> Animation</span>
+            <img src="assets/AnimalsOnSet_BetweenRoundAnimation.gif" alt="Between Rounds Animation">
+            <div class="art-caption">Animals On Set - Between Rounds Score</div>
+        </div>
+
+        <div class="art-brick zoom-trigger" data-type="animation">
+            <span class="gallery-tag tag-animation"><i class="fas fa-film"></i> Animation</span>
+            <img src="assets/AnimalsOnSet_RevealWinnerAnimation.gif" alt="Reveal Winner Animation">
+            <div class="art-caption">Animals On Set - Reveal Winner</div>
+        </div>
+    </div>
+</section>
+
+    <section id="contact" class="contact-section fade-in-section">
+        <div class="container contact-content">
+            <h2 class="contact-title">Contact Me!</h2>
+            <p class="contact-text">
+                I am currently open for internships and work opportunities. 
+            </p>
+            
+            <a href="mailto:tderoy.thomas@gmail.com" class="contact-btn">
+                <i class="fas fa-envelope"></i> Send an Email
+            </a>
+
+            <a href="assets/resume.pdf" target="_blank" class="contact-btn outline-btn">
+                    <i class="fas fa-file-pdf"></i> View Resume
+            </a>
+
+            <div style="margin-bottom: 2rem;">
+                <p class="contact-text" style="margin-bottom: 0.5rem; font-size: 1rem;">Or reach out directly at:</p>
+                <p style="font-family: var(--font-mono); font-size: 1.2rem; color: var(--text-main); font-weight: 700;">tderoy.thomas@gmail.com</p>
+            </div>
+
+            <div class="contact-socials">
+                <a href="https://github.com/Thomas-Deroy" target="_blank" class="social-box">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://linkedin.com/in/thomas-deroy-96877838a" target="_blank" class="social-box">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="infoModal" class="modal-backdrop">
+        <div class="modal-window center-modal">
+
+            <div class="modal-content-overlay">
+                <div class="modal-head-center">
+                    <img id="m-logo" src="" alt="Logo">
+                    <h2 id="m-title">Project Title</h2>
+                </div>
+
+                <div class="modal-tags center-tags" id="m-tags"></div>
+                <div id="m-desc" class="modal-desc center-text"></div>
+            </div>
+
+            <div class="modal-visual-box">
+                <button class="modal-close">&times;</button>
+                <img id="m-img" class="modal-bg-gif" src="" alt="Project">
+
+                <div class="modal-actions popup-actions">
+                    <a href="#" id="m-github" class="btn btn-primary" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="#" id="m-youtube" class="btn btn-primary yt-btn" target="_blank">
+                    <i class="fab fa-youtube"></i> YouTube
+                    </a>
+                    <a href="#" id="m-steam" class="btn btn-primary steam-btn" target="_blank">
+                    <i class="fab fa-steam"></i> Steam
+                    </a>
+                    <a href="#" id="m-godot" class="btn btn-primary godot-btn" target="_blank">
+                    <i class="fas fa-cube"></i> Asset Lib
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox-overlay">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content-wrapper">
+            <img class="lightbox-img" id="lightbox-img" src="">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="descriptions.js"></script>
+</body>
+</html>
