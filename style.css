@@ -252,6 +252,7 @@ body {
 .remake { background: linear-gradient(135deg, #6366f1, #4338ca); }
 .group { background: linear-gradient(135deg, #ec4899, #be185d); }
 .solo { background: linear-gradient(135deg, #14b8a6, #0f766e); }
+.network { background: linear-gradient(135deg, #06b6d4, #0369a1); }
 .lang-tag { background: rgba(10, 10, 11, 0.95); border: 1px solid var(--accent-primary) !important; backdrop-filter: blur(5px); }
 
 .card-bottom h3 { font-size: 1.8rem; font-family: var(--font-head); margin-bottom: 5px; transform: translateY(10px); transition: 0.4s; }

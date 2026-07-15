@@ -147,6 +147,24 @@ const projectDescriptions = {
     // ----------------------------------------------------------
     "animals_on_set": `
 <h3 style='margin-bottom:4px; font-size:1.4rem; color:#ffffff;'>
+    <strong>Unity &bull; Networking &bull; Multiplayer</strong>
+</h3>
+
+<hr style='border:0; border-top:1px solid rgba(255,255,255,0.1); margin:12px 0;'>
+
+<h4 style='color:#06b6d4; margin-bottom:6px; font-size:1.1rem;'>What is it about?</h4>
+<p style='margin-bottom:12px; line-height:1.5; color:#cbd5e1;'>
+    The online multiplayer version of our chaotic couch party game. I took the gameplay and expanded it to support online play so friends can compete from anywhere via Peer to Peer connections, slapping each other around and stealing clothing items to match the camera's theme.
+</p>
+
+<h4 style='color:#8b5cf6; margin-bottom:6px; font-size:1.1rem;'>Under the Hood</h4>
+<p style='margin-bottom:0; line-height:1.5; color:#cbd5e1;'>
+    The major technical difficulty here was synchronizing our custom ragdoll physics across a network. I focused on optimizing the netcode and building state synchronization to ensure the chaotic physical interactions felt responsive and fair for all connected players.
+</p>
+    `,
+    // ----------------------------------------------------------
+    "animals_on_set_local": `
+<h3 style='margin-bottom:4px; font-size:1.4rem; color:#ffffff;'>
     <strong>Unity &bull; Physics &bull; Local Multiplayer</strong>
 </h3>
 <p style='margin:0 0 12px 0; font-size:0.9rem; color:#94a3b8;'>
@@ -157,7 +175,7 @@ const projectDescriptions = {
 
 <h4 style='color:#06b6d4; margin-bottom:6px; font-size:1.1rem;'>What is it about?</h4>
 <p style='margin-bottom:12px; line-height:1.5; color:#cbd5e1;'>
-    A chaotic couch party game where you and your friends compete to score the most points by appearing in the camera frame while matching the current theme. Things don't stay friendly for long you can block opponents from the shot, slap them around, knock them into water to get there clothes off, or use traps to steal the clothing items you need to claim victory.
+    A chaotic couch party game where you and your friends compete to score the most points by appearing in the camera frame while matching the current theme. Things don't stay friendly for long—you can block opponents from the shot, slap them around, knock them into water to get their clothes off, or use traps to steal the clothing items you need to claim victory.
 </p>
 
 <h4 style='color:#8b5cf6; margin-bottom:6px; font-size:1.1rem;'>My Contributions</h4>
