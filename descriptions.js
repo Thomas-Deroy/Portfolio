@@ -220,7 +220,25 @@ const projectDescriptions = {
 
 <h4 style='color:#8b5cf6; margin-bottom:6px; font-size:1.1rem;'>Under the Hood</h4>
 <p style='margin-bottom:0; line-height:1.5; color:#cbd5e1;'>
-    I used Paradox Script to build out the focus trees, dynamic events, and national spirits. As I believe the mod is well balanced I sadly decided to stop updating it after the No Compromise DLC as it broke most of the focus trees.
+    I used Paradox Script to build out the focus trees, dynamic events, and national spirits. But sadly I decided to stop updating it after the No Compromise DLC as it broke most of the focus trees.
+</p>
+    `,
+
+    "blood_and_sugar": `
+<h3 style='margin-bottom:4px; font-size:1.4rem; color:#ffffff;'>
+    <strong>Paradox Script &bull; HOI4 &bull; Content Mod</strong>
+</h3>
+
+<hr style='border:0; border-top:1px solid rgba(255,255,255,0.1); margin:12px 0;'>
+
+<h4 style='color:#06b6d4; margin-bottom:6px; font-size:1.1rem;'>What is it about?</h4>
+<p style='margin-bottom:12px; line-height:1.5; color:#cbd5e1;'>
+    An expansion mod for Hearts of Iron IV focusing on Hispaniola. It adds focus trees and events for nations like Haiti and Dominican Republic.
+</p>
+
+<h4 style='color:#8b5cf6; margin-bottom:6px; font-size:1.1rem;'>Under the Hood</h4>
+<p style='margin-bottom:0; line-height:1.5; color:#cbd5e1;'>
+    I used Paradox Script to build out the focus trees, dynamic events, and national spirits. As it even follows historical events as the 1937 massacre and the joining of the world against Japan and Germany.
 </p>
     `,
 
