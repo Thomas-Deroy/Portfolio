@@ -5,9 +5,15 @@ tiltCards.forEach(card => {
     card.addEventListener('mousemove', e => {
         const rect = card.getBoundingClientRect();
 
-        // Mouse position inside the card
-        const xPct = (e.clientX - rect.left) / rect.width;
-        const yPct = (e.clientY - rect.top) / rect.height;
+        // 1. Get raw pixel coordinates for the Glow Effect
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        card.style.setProperty('--mouse-x', `${x}px`);
+        card.style.setProperty('--mouse-y', `${y}px`);
+
+        // 2. Get percentages for the 3D Tilt Effect
+        const xPct = x / rect.width;
+        const yPct = y / rect.height;
 
         const xRot = (0.5 - yPct) * 10;
         const yRot = (xPct - 0.5) * 10;
@@ -240,3 +246,39 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll('.fade-in-section').forEach(section => {
     observer.observe(section);
 });
+
+// Stagger bento grid cards on scroll
+const gridObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            anime({
+                targets: '.bento-grid .project-card',
+                translateY: [50, 0],
+                opacity: [0, 1],
+                delay: anime.stagger(100),
+                easing: 'easeOutExpo',
+                duration: 800
+            });
+            gridObserver.unobserve(entry.target);
+        }
+    });
+});
+
+gridObserver.observe(document.querySelector('.bento-grid'));
+
+document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('mousemove', e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        card.style.setProperty('--mouse-x', `${x}px`);
+        card.style.setProperty('--mouse-y', `${y}px`);
+    });
+});
+
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        document.querySelector('.status-badge').classList.add('expanded');
+    }, 500);
+});
+
