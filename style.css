@@ -223,6 +223,61 @@ body {
 .engine-card:hover .engine-visual img { filter: grayscale(0%) opacity(1); }
 .engine-card h3 { font-family: var(--font-head); font-size: 1.2rem; margin: 0; }
 
+/* AI USAGE TAGS */
+.ai-usage-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    width: fit-content;
+    max-width: 100%;
+
+    padding: 6px 10px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(139, 92, 246, 0.16),
+        rgba(6, 182, 212, 0.08)
+    );
+
+    border: 1px solid rgba(139, 92, 246, 0.4);
+    border-radius: 4px;
+
+    color: #ddd6fe;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+
+    box-shadow: inset 0 0 12px rgba(139, 92, 246, 0.04);
+    transition: all 0.3s ease;
+}
+
+/* AI Icon */
+.ai-usage-tag i {
+    color: var(--accent-secondary);
+    font-size: 0.8rem;
+    filter: drop-shadow(0 0 5px rgba(6, 182, 212, 0.5));
+    flex-shrink: 0;
+}
+
+.ai-usage-tag:hover {
+    border-color: var(--accent-primary);
+    background: rgba(139, 92, 246, 0.2);
+    box-shadow: 0 0 12px rgba(139, 92, 246, 0.15);
+}
+
+/* Project Details Modal */
+.modal-ai-usage {
+    margin-bottom: 1.2rem;
+    justify-content: center;
+}
+
+/* Hidden state */
+.ai-usage-tag[hidden] {
+    display: none !important;
+}
+
 /* ============================
    5. PROJECTS / GAME LIBRARY
    ============================ */

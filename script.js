@@ -39,6 +39,7 @@ const mDesc = document.getElementById('m-desc');
 const mImg = document.getElementById('m-img');
 const mTags = document.getElementById('m-tags');
 const mLogo = document.getElementById('m-logo');
+const mAiUsage = document.getElementById('m-ai-usage');
 
 const mGithub = document.getElementById('m-github');
 const mYoutube = document.getElementById('m-youtube');
@@ -50,6 +51,15 @@ triggers.forEach(item => {
         // Read project data
         const title = item.getAttribute('data-title');
         const descId = item.getAttribute('data-desc-id');
+
+        // Read AI Usage
+        const aiUsage = item.dataset.aiUsage || 'None';
+
+        // Populate AI Usage label in modal
+        if (mAiUsage) {
+            setAIUsageLabel(mAiUsage, aiUsage);
+            mAiUsage.hidden = false;
+        }
 
         let desc = projectDescriptions?.[descId]
             || item.getAttribute('data-desc')
@@ -138,6 +148,24 @@ closeBtn.addEventListener('click', hideModal);
 window.addEventListener('click', e => {
     if (e.target === modal) hideModal();
 });
+
+/* ---------- AI Usage Labels ---------- */
+
+function setAIUsageLabel(element, usage) {
+    if (!element) return;
+
+    element.replaceChildren();
+
+    const icon = document.createElement('i');
+    icon.className = 'fas fa-wand-magic-sparkles';
+    icon.setAttribute('aria-hidden', 'true');
+
+    const text = document.createElement('span');
+    text.textContent = `AI Usage: ${usage || 'None'}`;
+
+    element.appendChild(icon);
+    element.appendChild(text);
+}
 
 
 /* ---------- Art Gallery ---------- */

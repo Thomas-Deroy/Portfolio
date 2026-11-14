@@ -320,5 +320,23 @@ const projectDescriptions = {
 <p style='margin-bottom:0; line-height:1.5; color:#cbd5e1;'>
     Built as a C++ plugin for a provided Unreal Engine framework. I built a complex Finite State Machine that handles decision-making with memory retention, so the AI remembers its previous tasks after being interrupted by a threat. I also implemented blended steering with tangential avoidance for smooth movement, and a spatial memory map so it remembers visited houses and dropped items.
 </p>
+    `,
+
+    "playlytics": `
+<h3 style='margin-bottom:4px; font-size:1.4rem; color:#ffffff;'>
+    <strong>C# &bull; .NET &bull; Data Analysis</strong>
+</h3>
+
+<hr style='border:0; border-top:1px solid rgba(255,255,255,0.1); margin:12px 0;'>
+
+<h4 style='color:#06b6d4; margin-bottom:6px; font-size:1.1rem;'>What is it about?</h4>
+<p style='margin-bottom:12px; line-height:1.5; color:#cbd5e1;'>
+    It is a game analytics software for analyzing the Steam gaming market. It helps users to analyze revenue, performance, market metrics, and statistics of all games on Steam library.
+</p>
+
+<h4 style='color:#8b5cf6; margin-bottom:6px; font-size:1.1rem;'>Under the Hood</h4>
+<p style='margin-bottom:0; line-height:1.5; color:#cbd5e1;'>
+    The program was created using C# programming language and .NET framework. It helps to process data and get valuable information from the Steam library, turning raw data into useful and insightful results. Revenue analysis, performance and market metrics of games along with visual representations of this information help users to see trends and statistics of the market.
+</p>
     `
 };
